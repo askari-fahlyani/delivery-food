@@ -7,5 +7,68 @@
     *{
         margin: 0;
         padding:0;
+        
+        
     }
+   
+}
+@layer components{
+    .site-container{
+        max-width: 1440px;
+        margin:1rem auto
+    }
+    .top-header{
+        margin:1rem;
+    }
+    .navigation-item{
+        font-weight: 500;
+        font-style: normal;
+    }
+    .active-navigation-item{
+    color: var(--primary);
+    font-weight: 600;
+    font-style: normal;
+    }
+    .navigation-item>a{
+        color: var(--gray-01);
+        font-weight: 500;
+    }
+    .auth-button{
+        border:1px solid var(--primary);
+        border-radius: 100px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        height: 45px;
+        width: 90px;
+        padding :10px 16px;
+
+    }
+    .active-auth-button{
+        border:1px solid var(--primary);
+        background-color:var(--primary);
+        padding :10px 16px;
+        border-radius: 100px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        color: #fff;
+        height: 45px;
+        width: 90px;
+
+    }
+
+}
+
+:root{
+    --primary:#C90000;
+    --white-01:#fff;
+    --black-01:#323232;
+    --black-02:#504F4F;
+    --secondary:#FFC300;
+    --secondery-lemon:#FFF6A3;
+    --gray-01:#7D7C7C;
+    --gray-3:#E3E3E3;
+    --gray-4:#F1F1F1;
+
 }
